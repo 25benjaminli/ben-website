@@ -4,11 +4,6 @@ const HobbiesSection = () => {
 	return (
 		<div className="py-6 bg-white dark:bg-gray-900 px-6">
 			<div className="space-y-4 ">
-				{/* <div>
-					<h3 className="text-lg font-semibold text-gray-900 dark:text-white text-center md:text-left">Community Involvement & Hobbies</h3>
-					<div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
-				</div> */}
-
 				<p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
                     {/* on the academic side... */}
                     I especially enjoy informative writing; it's gratifying to help people curious to learn more about a subject while solidifying my own understanding. 
@@ -38,10 +33,10 @@ const HobbiesSection = () => {
 						<figcaption className="text-xs text-gray-500 dark:text-gray-400 mt-2 max-w-[300px]">Hiking with my dad near Mount Rainier, Washington</figcaption>
 					</figure>
 					
-					<figure className="text-center">
+					{/* <figure className="text-center">
 						<Image src="/mtwashington.jpg" alt="Photo 3" width={300} height={300} className="object-cover rounded-lg shadow-md" />
 						<figcaption className="text-xs text-gray-500 dark:text-gray-400 mt-2 max-w-[300px]">Climbing Mount Washington, New Jersey</figcaption>
-					</figure>
+					</figure> */}
 					
 					<figure className="text-center">
 						<Image src="/cascades.png" alt="Photo 4" width={300} height={300} className="object-cover rounded-lg shadow-md" />
