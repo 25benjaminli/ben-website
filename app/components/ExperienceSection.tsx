@@ -19,7 +19,7 @@ const ExperienceSection = () => {
 			period: '2022 - 2025',
 			highlights: (
 				<ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-1 list-disc list-inside">
-					<li>Developed ML/DL algorithms to predict human-infecting, viral zoonoses based on genomics sequences, delineate toxin-producing cyanobacteria, and segment brain tumors</li>
+					<li>Developed ML/DL algorithms to predict human-infecting, viral zoonoses based on genomics sequences, delineate toxin-producing cyanobacteria, and segment brain tumors given low-quality MRI data from sub-Saharan Africa</li>
 					<li>Special focus on few-shot learning and optimizing setups given limited computing resources/data quality</li>
 				</ul>
 			),
