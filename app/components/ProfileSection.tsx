@@ -15,7 +15,8 @@ const ProfileSection = () => {
 					<h2 className="text-lg md:text-xl text-gray-600 dark:text-gray-400">Computer Science Student at Cornell University</h2>
 					<div className="h-px w-16 bg-gray-200 dark:bg-gray-700 mx-auto my-4" />
 					<p className="text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xs mx-auto leading-relaxed">
-						I'm passionate about employing computer science for socially beneficial causes in healthcare and the environment. 
+						I'm a first-year student passionate about employing computer science, particularly AI and computer vision, for important problems in healthcare and the environment. 
+						I'm also an avid outdoors & geography enthusiast, runner, and writer!
 						<br/>
 						<br/>
 						See my full resume here: <a href="/Benjamin_Li_Resume.pdf" target="_blank" className="text-blue-600 dark:text-blue-400 hover:underline">Benjamin_Li_Resume.pdf</a>
@@ -76,6 +77,34 @@ const ProfileSection = () => {
 							<Image src="/gscholar_logo.png" alt="Google Scholar" width={24} height={24} className="object-contain" />
 						</a>
 					</div>
+				</div>
+
+				{/* text to say these are some of my favorite photos from random areas */}
+				<p className="text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xs mx-auto leading-relaxed pt-4">
+					Below's a collection of photos from favorite places I've been!
+				</p>
+
+				{/* add photos of myself here: specifically, I have photo1.jpg, photo2.jpg, photo3.jpg that I want to display below all this */}
+				<div className="flex flex-wrap items-center justify-center gap-4 pt-4">
+					<figure className="text-center">
+						<Image src="/IMG_5460.jpg" alt="Photo 1" width={150} height={150} className="object-cover rounded-lg shadow-md" />
+						<figcaption className="text-xs text-gray-500 dark:text-gray-400 mt-2 max-w-[150px]">Liberty State Park Cleanup, New Jersey</figcaption>
+					</figure>
+					
+					<figure className="text-center">
+						<Image src="/IMG_7859.jpg" alt="Photo 2" width={150} height={150} className="object-cover rounded-lg shadow-md" />
+						<figcaption className="text-xs text-gray-500 dark:text-gray-400 mt-2 max-w-[150px]">Hiking near Mount Rainier, Washington</figcaption>
+					</figure>
+					
+					<figure className="text-center">
+						<Image src="/IMG_8250.jpg" alt="Photo 3" width={150} height={150} className="object-cover rounded-lg shadow-md" />
+						<figcaption className="text-xs text-gray-500 dark:text-gray-400 mt-2 max-w-[150px]">Climbing Mount Washington, New Jersey</figcaption>
+					</figure>
+					
+					<figure className="text-center">
+						<Image src="/IMG_8358.jpg" alt="Photo 4" width={150} height={150} className="object-cover rounded-lg shadow-md" />
+						<figcaption className="text-xs text-gray-500 dark:text-gray-400 mt-2 max-w-[150px]">Exploring North Cascades National Park</figcaption>
+					</figure>
 				</div>
 			</div>
 		</div>

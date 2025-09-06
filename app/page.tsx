@@ -2,7 +2,7 @@ import ProfileSection from './components/ProfileSection';
 import SkillsSection from './components/SkillsSection';
 import ExperienceSection from './components/ExperienceSection';
 import HobbiesSection from './components/HobbiesSection';
-import ProjectsSection from './components/ProjectsSection';
+import EducationSection from './components/EducationSection';
 import HonorsSection from './components/HonorsSection';
 export default function MinimalistPortfolio() {
 
@@ -26,7 +26,7 @@ export default function MinimalistPortfolio() {
 					</div>
 
 					<div>
-						<ProjectsSection />
+						<EducationSection />
 					</div>
 
 					<div>

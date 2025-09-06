@@ -11,6 +11,38 @@ const HonorsSection = () => {
 				</ul>
 			)
 		},
+        {
+			title: '1st Place - Math & Computer Science',
+			organization: 'New Jersey Academy of Sciences (NJAS) Symposium',
+			year: '2024',
+			highlights: (
+				<ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-1 list-disc list-inside">
+					<li>Selected to represent New Jersey after winning 1st place in Math and Computer Science at the annual NJAS Symposium</li>
+				</ul>
+			)
+		},
+
+        {
+			title: 'Best Paper & Best Presenter Award (Artificial Intelligence/Machine Learning)',
+			organization: 'IEEE Ubiquitous Computing, Electronics & Mobile Communication Conference @ Columbia University',
+			year: '2023',
+			highlights: (
+				<ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-1 list-disc list-inside">
+					<li>Research: “Identification of Cyanobacteria for Harmful Algal Blooms Research Using the YOLO Framework”</li>
+				</ul>
+			)
+		},
+
+        {
+            title: 'Presidential Volunteer Service Award (Gold)',
+            organization: 'Government of the United States',
+            year: '2022',
+            highlights: (
+                <ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-1 list-disc list-inside">
+                    <li>Recognized for volunteering commitment to teaching and constructing python curriculum at Equal Access Robotics, developing volunteer outreach app for Jersey Cares</li>
+                </ul>
+            )
+        }
 		
 	];
 

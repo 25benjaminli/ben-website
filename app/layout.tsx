@@ -13,50 +13,41 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Benjamin Li\'s Website',
+	title: 'Benjamin Li\'s Portfolio',
 	description:
 		'Welcome to my website!',
 	keywords: [
 		'Software Developer',
-		'Web Developer',
-		'Clean Code',
-		'Simple Design',
 		'JavaScript',
 		'TypeScript',
 		'React',
 		'Next.js',
-		'User Experience',
 		'Problem Solving',
 		'Effective Solutions',
 		'Web Development',
 		'Frontend Development',
 		'Backend Development',
-		'[Your Name]',
+		'Machine Learning',
+		'Deep Learning',
+		'AI'
 	],
-	authors: [{ name: '[Your Name]' }],
-	creator: '[Your Name]',
+	authors: [{ name: 'Benjamin Li' }],
+	creator: 'Benjamin Li',
 	openGraph: {
-		title: '[Your Name] - Developer Portfolio',
-		description: 'Passionate developer creating simple and effective solutions. Explore my projects and development approach.',
+		title: 'Benjamin Li - Developer Portfolio',
+		description: 'Passionate about AI/ML solutions for healthcare and the environment',
 		url: 'https://your-domain.com',
-		siteName: '[Your Name] - Portfolio',
+		siteName: 'Benjamin Li\'s Portfolio',
 		images: [
 			{
-				url: '/og-image.jpg',
+				url: '/portrait.jpg',
 				width: 1200,
 				height: 630,
-				alt: '[Your Name] - Developer Portfolio',
+				alt: 'Benjamin Li\'s Portfolio',
 			},
 		],
 		locale: 'en_US',
 		type: 'website',
-	},
-	twitter: {
-		card: 'summary_large_image',
-		title: '[Your Name] - Developer',
-		description: 'Passionate developer creating simple and effective solutions. Explore my projects and development approach.',
-		creator: '@yourusername',
-		images: ['/og-image.jpg'],
 	},
 	robots: {
 		index: true,
