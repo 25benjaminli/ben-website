@@ -19,25 +19,25 @@ const ProfileSection = ({ scrollToSection }: ProfileSectionProps) => {
 	return (
 		<div className="w-full pb-8 pt-1 md:py-0 bg-white dark:bg-gray-900 px-6 sm:pt-0">
 				{/* Theme Toggle Button */}
-				<div className="flex justify-end mb-1">
+				<div className="flex justify-end mb-2">
 					<ThemeToggle />
 				</div>
 				
-				<div className="space-y-2 text-center">
+				<div className="space-y-3 text-center">
 				<div className="relative w-32 md:w-48 h-32 md:h-48 mx-auto">
 					<div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-700">
 						<Image src="/portrait.jpg" alt="Profile" fill className="object-cover" priority />
 					</div>
 				</div>
 
-				<div className="space-y-2">
+				<div className="space-y-3">
 					<h1 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">Benjamin Li</h1>
 					<h2 className="text-lg md:text-xl text-gray-600 dark:text-gray-400">Computer Science Student at Cornell University</h2>
-					<div className="h-px w-16 bg-gray-200 dark:bg-gray-700 mx-auto my-2" />
+					<div className="h-px w-16 bg-gray-200 dark:bg-gray-700 mx-auto my-3" />
 				</div>
 
 				{/* Contact Info */}
-				<div className="flex items-center justify-center space-x-2">
+				<div className="flex items-center justify-center space-x-2 mt-2">
 					<svg className="w-4 h-4 text-gray-600 dark:text-gray-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
 						<path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 					</svg>
@@ -46,7 +46,7 @@ const ProfileSection = ({ scrollToSection }: ProfileSectionProps) => {
 					</p>
 				</div>
 
-				<div className="flex items-center justify-center space-y-4">
+				<div className="flex items-center justify-center space-y-4 mt-4">
 
 					{/* Social Links */}
 					<div>
@@ -101,7 +101,7 @@ const ProfileSection = ({ scrollToSection }: ProfileSectionProps) => {
 				</div>
 
 				{/* Navigation Buttons */}
-				<div className="space-y-2">
+				<div className="space-y-3 mt-5">
 					<p>Navigate to:</p>
 					<div className="flex flex-wrap gap-2 justify-center">
 						{navigationItems.map((item) => (

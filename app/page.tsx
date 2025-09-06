@@ -22,16 +22,15 @@ export default function MinimalistPortfolio() {
             <div className="grid grid-cols-1 lg:grid-cols-10">
                 {/* Left Column - Profile */}
                 <div className="lg:col-span-3 lg:border-r border-gray-200 dark:border-gray-800 pb-4 lg:pb-0">
-					<div className="lg:sticky lg:top-4 lg:pt-8">
+					<div className="lg:sticky lg:top-2 lg:pt-2">
 						<ProfileSection scrollToSection={scrollToSection} />
 					</div>
 				</div>
 
                 {/* Right Column - All Sections */}
                 <div className="lg:col-span-7 flex flex-col min-h-screen">
-                    {/* About Me Section */}
                     <div id="about" className="border-b border-gray-200 dark:border-gray-800">
-                        <div className="pt-4 pb-2 px-6">
+                        <div className="pt-4 pb-1 px-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                                 About Me
                             </h3>
@@ -40,9 +39,8 @@ export default function MinimalistPortfolio() {
                         <AboutSection />
                     </div>
 
-                    {/* Core Skills Section */}
                     <div id="skills" className="border-b border-gray-200 dark:border-gray-800">
-                        <div className="pt-4 pb-2 px-6">
+                        <div className="pt-4 pb-1 px-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                                 Core Skills
                             </h3>
@@ -51,20 +49,18 @@ export default function MinimalistPortfolio() {
                         <SkillsSection />
                     </div>
 
-                    {/* Experience Section */}
                     <div id="experience" className="border-b border-gray-200 dark:border-gray-800">
-                        <div className="py-6 px-6">
+                        <div className="pt-4 pb-1 px-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                                Experience
+                                Selected Experience & Projects
                             </h3>
                             <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
                         </div>
                         <ExperienceSection />
                     </div>
 
-                    {/* Education Section */}
                     <div id="education" className="border-b border-gray-200 dark:border-gray-800">
-                        <div className="py-6 px-6">
+                        <div className="pt-4 pb-1 px-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                                 Education
                             </h3>
@@ -73,20 +69,18 @@ export default function MinimalistPortfolio() {
                         <EducationSection />
                     </div>
 
-                    {/* Honors Section */}
                     <div id="honors" className="border-b border-gray-200 dark:border-gray-800">
-                        <div className="py-6 px-6">
+                        <div className="pt-4 pb-1 px-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                                Honors
+                                Selected Honors
                             </h3>
                             <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
                         </div>
                         <HonorsSection />
                     </div>
 
-                    {/* Community Section */}
                     <div id="community" className="border-b border-gray-200 dark:border-gray-800">
-                        <div className="py-6 px-6">
+                        <div className="pt-4 pb-1 px-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                                 Community Involvement
                             </h3>
@@ -95,9 +89,8 @@ export default function MinimalistPortfolio() {
                         <CommunitySection />
                     </div>
 
-                    {/* Hobbies Section */}
                     <div id="hobbies" className="border-b border-gray-200 dark:border-gray-800">
-                        <div className="py-6 px-6">
+                        <div className="pt-4 pb-1 px-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                                 Hobbies
                             </h3>

@@ -8,8 +8,8 @@ const ExperienceSection = () => {
 			period: 'Summer 2025',
 			highlights: (
 				<ul>
-					<li>Developed open-source implementation of a quantum optimization algorithm for molecular docking</li>
-					<li>Learned how to leverage various technologies (e.g. Qiskit, AWS)</li>
+					<li>Learned how to simulate quantum circuits with Qiskit on classical computers</li>
+					<li>Developed an <a href = "https://github.com/25benjaminli/molecular_docking_qaoa" target = "_blank">open-source implementation</a> of a quantum optimization algorithm for molecular docking</li>
 					<li>Presented & discussed work with internal Regeneron teams and IBM research team members</li>
 				</ul>
 			)
@@ -24,7 +24,7 @@ const ExperienceSection = () => {
 					<ul className="ml-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-1 list-[circle] list-inside">
 						<li>Predicting human-infecting, viral zoonoses based on genomics sequences</li>
 						<li>Detecting toxin-producing cyanobacteria for harmful algal bloom research</li>
-						<li><a href = "https://www.societyforscience.org/regeneron-sts/2025-student-finalists/benjamin-li/" target = "_blank">Segmenting brain tumors</a> using low-quality MRI data from sub-Saharan Africa</li>
+						<li>Segmenting brain tumors using low-quality MRI data from sub-Saharan Africa</li>
 					</ul>
 					<li>Special focus on few-shot learning and optimizing setups given limited computing resources/data quality</li>
 				</ul>

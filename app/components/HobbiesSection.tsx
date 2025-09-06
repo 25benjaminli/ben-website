@@ -5,11 +5,11 @@ const HobbiesSection = () => {
 		<div className="pt-2 pb-4 bg-white dark:bg-gray-900 px-6">
 			<div className="space-y-2">
                 <p>
-                    I'm a runner, having done cross country and track and field (sprinting & jumping) in high school. In the summer of 2024, I completed a grueling race up Loon Mountain, New Hampshire - deemed "Most Competitive Hillclimb" by Runner's World Magazine!
+                    I'm a runner, having done cross country and track and field (sprinting & jumping) in high school. In the summer of 2024, I completed a grueling 10K race up Loon Mountain, New Hampshire - deemed "Most Competitive Hillclimb" by Runner's World Magazine!
                 </p>
 
                 <p>
-                    I love spending time outdoors and in nature, whether that's running, hiking, or camping. 
+                    I also love spending time outdoors and in nature, whether that's running, hiking, or camping. 
                     But when I'm not able to travel far from home, I enjoy exploring new places and learning 
                     about different cultures through the game GeoGuessr. I had so much fun with the game that I reached 
                     top 80 on the competitive, no-move gamemode leaderboard in USA! 
@@ -20,10 +20,6 @@ const HobbiesSection = () => {
                 </p>
 
 				<div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-					<figure className="text-center">
-						<Image src="/libertystatepark.jpg" alt="Photo 1" width={300} height={300} className="object-cover rounded-lg shadow-md" />
-						<figcaption className="text-sm text-gray-500 dark:text-gray-400 mt-2 max-w-[300px]">Liberty State Park Cleanup, NJ. So privileged to have worked with these kind volunteers!</figcaption>
-					</figure>
 
                     <figure className="text-center">
 						<Image src="/glacier.png" alt="Photo 4" width={300} height={300} className="object-cover rounded-lg shadow-md" />
@@ -32,7 +28,7 @@ const HobbiesSection = () => {
 
                     <figure className="text-center">
 						<Image src="/rainier.png" alt="Photo 2" width={400} height={400} className="object-cover rounded-lg shadow-md" />
-						<figcaption className="text-sm text-gray-500 dark:text-gray-400 mt-2 max-w-[400px]">10+ mile hiking trip, reaching 8000 ft elevation with my dad near Mount Rainier, WA</figcaption>
+						<figcaption className="text-sm text-gray-500 dark:text-gray-400 mt-2 max-w-[400px]">10+ mile hiking trip, reaching 8000 ft elevation near Mount Rainier, WA</figcaption>
 					</figure>
 
                     <figure className="text-center">
