@@ -5,3 +5,21 @@
 body {
 	background-color: #000;
 }
+
+@layer base {
+	a {
+	@apply text-blue-400 underline hover:text-blue-600; /* Example: blue, underlined, darker on hover */
+	}
+	
+	p {
+		@apply text-base text-gray-600 dark:text-gray-400 leading-relaxed;
+	}
+
+	.defaultContainer {
+		@apply pt-2 pb-4 bg-white dark:bg-gray-900 px-6;
+	}
+
+	ul {
+		@apply text-base text-gray-600 dark:text-gray-400 leading-relaxed space-y-1 list-disc list-inside
+	}
+}
