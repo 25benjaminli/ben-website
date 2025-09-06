@@ -28,9 +28,9 @@ const HobbiesSection = () => {
                 </p>
 
                 {/* text to say these are some of my favorite photos from random areas */}
-				<p className="text-sm md:text-base text-gray-600 dark:text-gray-400 max-w-xs mx-auto leading-relaxed pt-4">
-					Below's a collection of photos from favorite places I've been!
-				</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Here are some of my favorite photos from various places I've explored:
+                </p>
 
 				{/* add photos of myself here: specifically, I have photo1.jpg, photo2.jpg, photo3.jpg that I want to display below all this */}
 				<div className="flex flex-wrap items-center justify-center gap-4 pt-4">
@@ -56,7 +56,7 @@ const HobbiesSection = () => {
 
                     <figure className="text-center">
 						<Image src="/glacier.png" alt="Photo 4" width={300} height={300} className="object-cover rounded-lg shadow-md" />
-						<figcaption className="text-xs text-gray-500 dark:text-gray-400 mt-2 max-w-[300px]">Glacier</figcaption>
+						<figcaption className="text-xs text-gray-500 dark:text-gray-400 mt-2 max-w-[300px]">Traversing glaciers in Alaska</figcaption>
 					</figure>
 				</div>
 			</div>

@@ -1,8 +1,14 @@
 import Image from 'next/image';
+import { ThemeToggle } from './ThemeToggle';
 
 const ProfileSection = () => {
 	return (
 		<div className="w-full py-8 md:py-0 bg-white dark:bg-gray-900 px-6 sm:pt-0">
+			{/* Theme Toggle Button */}
+			<div className="flex justify-end mb-4">
+				<ThemeToggle />
+			</div>
+			
 			<div className="space-y-8 text-center">
 				<div className="relative w-28 md:w-40 h-28 md:h-40 mx-auto">
 					<div className="relative w-full h-full rounded-full overflow-hidden ring-2 ring-gray-200 dark:ring-gray-700">

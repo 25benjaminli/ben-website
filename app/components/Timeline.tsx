@@ -10,7 +10,7 @@ interface TimelineProps {
 	title: string;
 }
 
-function Timeline({ arr, title }: TimelineProps) {
+function Timeline({ arr }: TimelineProps) {
 	return (
 		<div className="py-6 bg-white dark:bg-gray-900 px-6">
 			<div className="space-y-4 ">

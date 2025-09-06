@@ -12,11 +12,6 @@ const SkillsSection = () => {
 			category: 'ML/DL/Data Science',
 			items: ['PyTorch', 'scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'OpenCV'],
 		},
-		// 
-		{
-			category: 'Cloud',
-			items: ['AWS', 'Docker'],
-		},
 	];
 
 	return (
