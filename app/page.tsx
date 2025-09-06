@@ -1,28 +1,19 @@
 'use client';
 
-import { useState } from 'react';
 import ProfileSection from './components/ProfileSection';
 import SkillsSection from './components/SkillsSection';
 import ExperienceSection from './components/ExperienceSection';
 import HobbiesSection from './components/HobbiesSection';
 import EducationSection from './components/EducationSection';
 import HonorsSection from './components/HonorsSection';
-import CollapsibleSection from './components/CollapsibleSection';
+import AboutSection from './components/AboutSection';
 
 export default function MinimalistPortfolio() {
-    const [sectionsOpen, setSectionsOpen] = useState({
-        skills: false,
-        experience: false,
-        education: false,
-        honors: false,
-        hobbies: false
-    });
-
-    const toggleSection = (section: keyof typeof sectionsOpen) => {
-        setSectionsOpen(prev => ({
-            ...prev,
-            [section]: !prev[section]
-        }));
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
     return (
@@ -31,52 +22,77 @@ export default function MinimalistPortfolio() {
                 {/* Left Column - Profile */}
                 <div className="md:col-span-3 border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-800">
                     <div className="md:sticky md:top-4 md:pt-8">
-                        <ProfileSection />
+                        <ProfileSection scrollToSection={scrollToSection} />
                     </div>
                 </div>
 
-                {/* Right Column - Collapsible Sections */}
+                {/* Right Column - All Sections */}
                 <div className="md:col-span-7 flex flex-col min-h-screen">
-                    <CollapsibleSection
-                        title="Core Skills"
-                        isOpen={sectionsOpen.skills}
-                        onToggle={() => toggleSection('skills')}
-                    >
+                    {/* About Me Section */}
+                    <div id="about" className="border-b border-gray-200 dark:border-gray-800">
+                        <div className="pt-4 pb-2 px-6">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                                About Me
+                            </h3>
+                            <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
+                        </div>
+                        <AboutSection />
+                    </div>
+
+                    {/* Core Skills Section */}
+                    <div id="skills" className="border-b border-gray-200 dark:border-gray-800">
+                        <div className="pt-4 pb-2 px-6">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                                Core Skills
+                            </h3>
+                            <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
+                        </div>
                         <SkillsSection />
-                    </CollapsibleSection>
+                    </div>
 
-                    <CollapsibleSection
-                        title="Experience"
-                        isOpen={sectionsOpen.experience}
-                        onToggle={() => toggleSection('experience')}
-                    >
+                    {/* Experience Section */}
+                    <div id="experience" className="border-b border-gray-200 dark:border-gray-800">
+                        <div className="py-6 px-6">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                                Experience
+                            </h3>
+                            <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
+                        </div>
                         <ExperienceSection />
-                    </CollapsibleSection>
+                    </div>
 
-                    <CollapsibleSection
-                        title="Education"
-                        isOpen={sectionsOpen.education}
-                        onToggle={() => toggleSection('education')}
-                    >
+                    {/* Education Section */}
+                    <div id="education" className="border-b border-gray-200 dark:border-gray-800">
+                        <div className="py-6 px-6">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                                Education
+                            </h3>
+                            <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
+                        </div>
                         <EducationSection />
-                    </CollapsibleSection>
+                    </div>
 
-                    <CollapsibleSection
-                        title="Honors"
-                        isOpen={sectionsOpen.honors}
-                        onToggle={() => toggleSection('honors')}
-                    >
+                    {/* Honors Section */}
+                    <div id="honors" className="border-b border-gray-200 dark:border-gray-800">
+                        <div className="py-6 px-6">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                                Honors
+                            </h3>
+                            <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
+                        </div>
                         <HonorsSection />
-                    </CollapsibleSection>
+                    </div>
 
-                    <CollapsibleSection
-                        title="Community Involvement & Hobbies"
-                        isOpen={sectionsOpen.hobbies}
-                        onToggle={() => toggleSection('hobbies')}
-                        showBorder={false}
-                    >
+                    {/* Hobbies Section */}
+                    <div id="hobbies" className="border-b border-gray-200 dark:border-gray-800">
+                        <div className="py-6 px-6">
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                                Community Involvement & Hobbies
+                            </h3>
+                            <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
+                        </div>
                         <HobbiesSection />
-                    </CollapsibleSection>
+                    </div>
                 </div>
             </div>
         </main>

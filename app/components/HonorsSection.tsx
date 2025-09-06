@@ -47,7 +47,7 @@ const HonorsSection = () => {
 	];
 
 	return (
-		<div className="py-6 bg-white dark:bg-gray-900 px-6">
+		<div className="pt-2 pb-4 bg-white dark:bg-gray-900 px-6">
 			<div className="space-y-4 ">
 				{/* <div>
 					<h3 className="text-lg font-semibold text-gray-900 dark:text-white text-center md:text-left">Selected Honors & Awards</h3>
