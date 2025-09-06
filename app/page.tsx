@@ -9,7 +9,7 @@ import HonorsSection from './components/HonorsSection';
 import AboutSection from './components/AboutSection';
 import CommunitySection from './components/CommunitySection';
 
-export default function MinimalistPortfolio() {
+export default function Website() {
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
         if (element) {
