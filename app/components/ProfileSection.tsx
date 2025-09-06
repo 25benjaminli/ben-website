@@ -43,7 +43,7 @@ const ProfileSection = ({ scrollToSection }: ProfileSectionProps) => {
 							<button
 								key={item.key}
 								onClick={() => scrollToSection(item.key)}
-								className="px-3 py-1.5 rounded-md text-xs font-medium transition-colors bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+								className="px-3 py-1.5 rounded-md text-base font-medium transition-colors bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
 							>
 								{item.label}
 							</button>
