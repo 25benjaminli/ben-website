@@ -19,8 +19,26 @@ const ExperienceSection = () => {
 			period: '2022 - 2025',
 			highlights: (
 				<ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-1 list-disc list-inside">
-					<li>Developed ML/DL algorithms to predict human-infecting, viral zoonoses based on genomics sequences, delineate toxin-producing cyanobacteria, and segment brain tumors given low-quality MRI data from sub-Saharan Africa</li>
+					<li>Developed ML/DL algorithms for:</li>
+					<ul className="ml-4 text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-1 list-[circle] list-inside">
+						<li>Predicting human-infecting, viral zoonoses based on genomics sequences</li>
+						<li>Delineating toxin-producing cyanobacteria for harmful algal blooms research using the YOLO framework</li>
+						<li>Segmenting brain tumors given low-quality MRI data from sub-Saharan Africa</li>
+					</ul>
 					<li>Special focus on few-shot learning and optimizing setups given limited computing resources/data quality</li>
+				</ul>
+			),
+		},
+		{
+			role: 'President of Computer Science Club',
+			org: 'Millburn High School',
+			period: '2022 - 2025',
+			highlights: (
+				<ul className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed space-y-1 list-disc list-inside">
+					<li>Developed & maintained kiosk security app serving 1600 students</li>
+					<li>Built websites for school clubs, taught lessons on frontend/backend web dev and artificial intelligence</li>
+					<li>Hosted guest speakers in AI & ethics, medical imaging, and robotics</li>
+					<li>Founding editor-in-chief for "Catalyst" CS & engineering magazine</li>
 				</ul>
 			),
 		},

@@ -6,7 +6,7 @@ const SkillsSection = () => {
 		},
 		{
 			category: 'Web/App Development',
-			items: ['HTML/CSS', 'Dart', 'React.js', 'Next.js', 'Flask', 'Firebase'],
+			items: ['HTML/CSS', 'React.js', 'Next.js', 'Dart', 'Flask', 'Firebase'],
 		},
 		{
 			category: 'ML/DL/Data Science',
