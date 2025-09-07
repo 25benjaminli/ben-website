@@ -42,7 +42,7 @@ export default function Website() {
                     <div id="skills" className="border-b border-gray-200 dark:border-gray-800">
                         <div className="pt-4 pb-1 px-6">
                             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                                Core Skills
+                                Skills
                             </h3>
                             <div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
                         </div>

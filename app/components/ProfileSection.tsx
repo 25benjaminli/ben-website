@@ -8,7 +8,7 @@ interface ProfileSectionProps {
 const ProfileSection = ({ scrollToSection }: ProfileSectionProps) => {
 	const navigationItems = [
 		{ key: 'about', label: 'About Me' },
-		{ key: 'skills', label: 'Core Skills' },
+		{ key: 'skills', label: 'Skills' },
 		{ key: 'experience', label: 'Experience' },
 		{ key: 'education', label: 'Education' },
 		{ key: 'honors', label: 'Honors' },

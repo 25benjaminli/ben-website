@@ -2,11 +2,11 @@ const SkillsSection = () => {
 	const skills = [
 		{
 			category: 'Languages',
-			items: ['Python', 'Java', 'Javascript', 'TypeScript', 'SQL', 'C++'],
+			items: ['Python', 'Java', 'Javascript', 'TypeScript', 'SQL', 'C++', 'HTML/CSS'],
 		},
 		{
-			category: 'Web/App Development',
-			items: ['HTML/CSS', 'React.js', 'Next.js', 'Dart', 'Flask', 'Firebase'],
+			category: 'Web/App Development Frameworks',
+			items: ['React.js', 'Next.js', 'Flutter', 'Dart', 'Flask', 'Firebase'],
 		},
 		{
 			category: 'ML/DL/Data Science',
