@@ -1,3 +1,3 @@
 ## My website
 
-Credits for the template: https://github.com/devportfoliotemplates/devportfoliotemplates
+Credits to this [template](https://github.com/devportfoliotemplates/devportfoliotemplates) for the basic layout and CSS!

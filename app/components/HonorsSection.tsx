@@ -6,7 +6,7 @@ const HonorsSection = () => {
 			year: '2025',
 			highlights: (
 				<ul>
-					<li>The "nation's oldest and most prestigious" science competition in the United States, with nearly 2,500 applicants who are evaluated based on "the originality and creativity of their scientific research, as well as their achievement and leadership"</li>
+					<li>The "oldest and most prestigious" science competition in the United States, with nearly 2,500 applicants who are evaluated based on "the originality and creativity of their scientific research, as well as their achievement and leadership"</li>
 					<li>Awarded $25,000 for research: <a href = "https://pubmed.ncbi.nlm.nih.gov/40276099/" target = "_blank">"MD-SA2: Multimodal, Depth-Aware Brain Tumor Segmentation in Sub-Saharan Populations"</a></li>
 				</ul>
 			)
@@ -17,13 +17,13 @@ const HonorsSection = () => {
 			year: '2024',
 			highlights: (
 				<ul>
-					<li>Selected to represent New Jersey after winning 1st place in Math and Computer Science at the annual NJAS Symposium</li>
+					<li>Selected to represent New Jersey for national symposium after winning 1st place in Math and Computer Science at the annual NJAS Symposium</li>
 				</ul>
 			)
 		},
 
         {
-			title: 'Best Paper & Best Presenter Award (Artificial Intelligence/Machine Learning)',
+			title: 'Best Paper & Best Presenter Awards (Artificial Intelligence/Machine Learning)',
 			organization: 'IEEE Ubiquitous Computing, Electronics & Mobile Communication Conference @ Columbia University',
 			year: '2023',
 			highlights: (

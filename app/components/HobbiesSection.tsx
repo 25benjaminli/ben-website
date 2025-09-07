@@ -9,7 +9,7 @@ const HobbiesSection = () => {
                 </p>
 
                 <p>
-                    I also love spending time outdoors and in nature, whether that's running, hiking, or camping. 
+                    I also love spending time outdoors and in nature, such as hiking or camping. 
                     But when I'm not able to travel far from home, I enjoy exploring new places and learning 
                     about different cultures through the game GeoGuessr. I had so much fun with the game that I reached 
                     top 80 on the competitive, no-move gamemode leaderboard in USA! 

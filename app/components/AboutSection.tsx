@@ -3,8 +3,9 @@ const AboutSection = () => {
 		<div className="defaultContainer">
 			<div className="space-y-4">
 				<p>
-					Hello, I'm Benjamin - thanks for visiting my website! I'm a first-year student interested in solving socially important problems (e.g. in healthcare and the environment) with computing, particularly with AI and computer vision.
-					I'm also an outdoors & geography enthusiast, runner, and writer. 
+					Hello, my name is Benjamin - thanks for visiting my website! Originally from Millburn, New Jersey, 
+					I'm a first-year student interested in solving socially important problems (e.g. in healthcare and the environment) with computing, particularly with AI and computer vision.
+					I'm also an outdoors & geography enjoyer, runner, and writer. 
 				</p>
                 {/* bold the text */}
                 

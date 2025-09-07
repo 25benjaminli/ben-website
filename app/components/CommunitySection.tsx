@@ -9,8 +9,8 @@ const CommunitySection = () => {
                 </ul>
                 <h3 className="text-lg font-medium text-gray-900 dark:text-white"><a href="https://www.njas.org/" target="_blank">New Jersey Academy of Sciences (NJAS)</a> Symposium</h3>
                 <ul>
-                    <li>Streamlined the review process for hundreds of student research projects</li>
-                    <li>Added judge ID verification, sanity checks for valid form input</li>
+                    <li>Streamlined the review process for 80 judges and over 200 student research projects</li>
+                    <li>Added google forms/sheets API integration, judge ID and student verification, sanity checks for valid form input</li>
                 </ul>
                 <h3 className="text-lg font-medium text-gray-900 dark:text-white">Open-source work</h3>
                 <ul>
