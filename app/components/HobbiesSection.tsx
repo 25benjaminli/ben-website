@@ -28,7 +28,7 @@ const HobbiesSection = () => {
 
                     <figure className="text-center">
 						<Image src="/rainier.png" alt="Photo 2" width={400} height={400} className="object-cover rounded-lg shadow-md" />
-						<figcaption className="text-sm text-gray-500 dark:text-gray-400 mt-2 max-w-[400px]">10+ mile hiking trip, reaching 8000 ft elevation near Mount Rainier, WA</figcaption>
+						<figcaption className="text-sm text-gray-500 dark:text-gray-400 mt-2 max-w-[400px]">Reaching 8000 ft elevation near Mount Rainier, WA!</figcaption>
 					</figure>
 
                     <figure className="text-center">

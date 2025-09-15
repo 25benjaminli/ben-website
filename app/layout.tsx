@@ -14,11 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: 'Benjamin Li\'s Website',
-	description:
-		'Welcome to my website!',
+	title: 'Benjamin Li',
+	description: "I'm a student at Cornell University, originally from Millburn, New Jersey, interested in \
+	leveraging artificial intelligence and computer vision to solve socially important problems \
+	(e.g. in healthcare and the environment)", 
 	keywords: [
+		'Computer Science',
 		'Software Developer',
+		'Research',
 		'JavaScript',
 		'TypeScript',
 		'React',
@@ -29,22 +32,21 @@ export const metadata: Metadata = {
 		'Machine Learning',
 		'Deep Learning',
 		'AI',
-		'Millburn',
-		'New Jersey'
+		'Cornell'
 	],
 	authors: [{ name: 'Benjamin Li' }],
 	creator: 'Benjamin Li',
 	openGraph: {
 		title: 'Benjamin Li - Developer Website',
 		description: 'Passionate about AI/ML for practical applications',
-		url: 'https://your-domain.com',
-		siteName: 'Benjamin Li\'s Website',
+		url: 'https://benjaminli.net',
+		siteName: 'Benjamin Li',
 		images: [
 			{
 				url: '/portrait.jpg',
 				width: 1200,
 				height: 630,
-				alt: 'Benjamin Li\'s Website',
+				alt: 'Benjamin Li',
 			},
 		],
 		locale: 'en_US',
