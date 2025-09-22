@@ -8,12 +8,10 @@ interface NavigationProps {
 const Navigation = ({ currentSection, onSectionChange }: NavigationProps) => {
     const navigationItems = [
         { key: 'about', label: 'About' },
-        { key: 'skills', label: 'Skills' },
-        { key: 'experience', label: 'Experience' },
         { key: 'education', label: 'Education' },
+        { key: 'researchandprojects', label: 'Publications & Projects' },
         { key: 'honors', label: 'Honors' },
-        { key: 'community', label: 'Community' },
-        { key: 'hobbies', label: 'Hobbies' }
+        { key: 'resume', label: 'Resume' },
     ];
 
     return (
@@ -27,10 +25,10 @@ const Navigation = ({ currentSection, onSectionChange }: NavigationProps) => {
                                 key={item.key}
                                 onClick={() => onSectionChange(item.key)}
                                 className={`
-                                    relative px-4 py-3 text-base font-medium transition-all duration-300 ease-in-out group
+                                    nav-button
                                     ${currentSection === item.key
-                                        ? 'text-blue-600 dark:text-blue-400'
-                                        : 'text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400'
+                                        ? 'nav-button-active'
+                                        : 'nav-button-inactive'
                                     }
                                 `}
                             >
@@ -38,32 +36,32 @@ const Navigation = ({ currentSection, onSectionChange }: NavigationProps) => {
                                 {/* Active underline */}
                                 <span 
                                     className={`
-                                        absolute bottom-0 left-0 h-0.5 bg-blue-600 dark:bg-blue-400 transition-all duration-300 ease-in-out
-                                        ${currentSection === item.key ? 'w-full' : 'w-0'}
+                                        nav-underline
+                                        ${currentSection === item.key ? 'nav-underline-active' : 'nav-underline-inactive'}
                                     `}
                                 />
                                 {/* Hover underline - only show when not active */}
                                 {currentSection !== item.key && (
                                     <span 
-                                        className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-600 dark:bg-blue-400 transition-all duration-300 ease-in-out group-hover:w-full"
+                                        className="nav-underline nav-underline-hover"
                                     />
                                 )}
                             </button>
                         ))}
                     </div>
                     
-                    {/* Mobile Navigation - Horizontal Scroll */}
+                    {/* Mobile Navigation - Flex Wrap */}
                     <div className="sm:hidden w-full">
-                        <div className="flex space-x-6 overflow-x-auto scrollbar-hide px-4">
+                        <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 px-4">
                             {navigationItems.map((item) => (
                                 <button
                                     key={item.key}
                                     onClick={() => onSectionChange(item.key)}
                                     className={`
-                                        relative flex-shrink-0 px-3 py-3 text-sm font-medium transition-all duration-300 ease-in-out whitespace-nowrap
+                                        nav-button-mobile
                                         ${currentSection === item.key
-                                            ? 'text-blue-600 dark:text-blue-400'
-                                            : 'text-gray-600 dark:text-gray-400'
+                                            ? 'nav-button-active'
+                                            : 'nav-button-inactive'
                                         }
                                     `}
                                 >
@@ -71,8 +69,8 @@ const Navigation = ({ currentSection, onSectionChange }: NavigationProps) => {
                                     {/* Mobile underline */}
                                     <span 
                                         className={`
-                                            absolute bottom-0 left-0 h-0.5 bg-blue-600 dark:bg-blue-400 transition-all duration-300 ease-in-out
-                                            ${currentSection === item.key ? 'w-full' : 'w-0'}
+                                            nav-underline
+                                            ${currentSection === item.key ? 'nav-underline-active' : 'nav-underline-inactive'}
                                         `}
                                     />
                                 </button>

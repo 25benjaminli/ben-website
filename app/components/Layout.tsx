@@ -13,28 +13,34 @@ interface LayoutProps {
 
 const Layout = ({ children, title, currentSection, onSectionChange }: LayoutProps) => {
     return (
-        <div className="min-h-screen bg-white dark:bg-gray-900">
+        <div className="page-container">
             <Navigation currentSection={currentSection} onSectionChange={onSectionChange} />
             
-            <main className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-10 gap-8 px-6 py-8">
-                    {/* Left Column - Profile */}
-                    <div className="lg:col-span-3">
-                        <div className="lg:sticky lg:top-24">
-                            <ProfileSection />
-                        </div>
+            <div className="sidebar-container">
+                <div className="max-w-7xl mx-auto px-6">
+                    <div className="w-full max-w-sm mx-auto pt-4">
+                        <ProfileSection />
+                    </div>
+                </div>
+            </div>
+
+            <main className="main-content-container">
+                <div className="content-wrapper">
+                    {/* Mobile Profile Section */}
+                    <div className="lg:hidden mb-8">
+                        <ProfileSection />
                     </div>
 
-                    {/* Right Column - Content */}
-                    <div className="lg:col-span-7">
-                        <div className="bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800">
+                    {/* Content */}
+                    <div className="max-w-5xl 2xl:max-w-6xl">
+                        <div className="content-card">
                             <div className="pt-8 pb-4 px-8">
-                                <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-6 leading-relaxed">
+                                <h1 className="heading-primary">
                                     {title}
                                 </h1>
-                                <div className="h-px w-full bg-gray-200 dark:bg-gray-700" />
+                                <div className="divider-horizontal" />
                             </div>
-                            <div className="px-8 pb-12 leading-relaxed text-gray-700 dark:text-gray-300">
+                            <div className="px-8 pb-12 text-body">
                                 {children}
                             </div>
                         </div>

@@ -43,25 +43,29 @@ const HonorsSection = () => {
                 </ul>
             )
         }
-		
 	];
 
 	return (
 		<div className="defaultContainer">
-			<div className="space-y-4 ">
-				<div className="space-y-4">
-					{honors.map((honor, index) => (
-						<div key={index} className="relative">
-							<div className="space-y-1">
-								<div className="flex flex-col md:flex-row md:items-center md:justify-between">
-									<h4 className="text-lg font-medium text-gray-900 dark:text-white">{honor.title}</h4>
-									<span className="text-base text-gray-500 dark:text-gray-400">{honor.year}</span>
+			<div className="space-y-6">
+				{/* Honors Section */}
+				<div>
+					<div className="space-y-4">
+						{honors.map((honor, index) => (
+							<div key={index} className="relative">
+								<div className="space-y-1">
+									<div className="flex flex-col md:flex-row md:items-center md:justify-between">
+										<h4 className="text-lg font-medium text-gray-900 dark:text-white">{honor.title}</h4>
+										<span className="text-base text-gray-500 dark:text-gray-400">{honor.year}</span>
+									</div>
+									<p className="text-base font-medium text-gray-600 dark:text-gray-300">{honor.organization}</p>
+									<div className="mt-2">{honor.highlights}</div>
 								</div>
-								<p className="text-base font-medium text-gray-600 dark:text-gray-300">{honor.organization}</p>
-								<div className="mt-2">{honor.highlights}</div>
 							</div>
-						</div>
-					))}
+						))}
+
+						<p>Please see my resume for more comprehensive list of awards and activities.</p>
+					</div>
 				</div>
 			</div>
 		</div>

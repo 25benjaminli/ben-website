@@ -1,24 +1,25 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Layout from './components/Layout';
 import AboutSection from './components/AboutSection';
-import SkillsSection from './components/SkillsSection';
-import ExperienceSection from './components/ExperienceSection';
+import ResearchAndProjects from './components/ResearchAndProjectsSection';
 import EducationSection from './components/EducationSection';
+import ResumeSection from './components/ResumeSection';
 import HonorsSection from './components/HonorsSection';
-import CommunitySection from './components/CommunitySection';
-import HobbiesSection from './components/HobbiesSection';
 
-export default function HomePage() {
+function HomePageContent() {
     const searchParams = useSearchParams();
     const router = useRouter();
     const [currentSection, setCurrentSection] = useState('about');
 
     useEffect(() => {
-        const section = searchParams.get('section') || 'about';
-        setCurrentSection(section);
+        // Only access searchParams on the client side
+        if (typeof window !== 'undefined') {
+            const section = searchParams?.get('section') || 'about';
+            setCurrentSection(section);
+        }
     }, [searchParams]);
 
     const handleSectionChange = (section: string) => {
@@ -28,18 +29,14 @@ export default function HomePage() {
 
     const renderCurrentSection = () => {
         switch (currentSection) {
-            case 'skills':
-                return <SkillsSection />;
-            case 'experience':
-                return <ExperienceSection />;
             case 'education':
                 return <EducationSection />;
+            case 'researchandprojects':
+                return <ResearchAndProjects />;
+            case 'resume':
+                return <ResumeSection />;
             case 'honors':
                 return <HonorsSection />;
-            case 'community':
-                return <CommunitySection />;
-            case 'hobbies':
-                return <HobbiesSection />;
             default:
                 return <AboutSection />;
         }
@@ -47,18 +44,14 @@ export default function HomePage() {
 
     const getSectionTitle = () => {
         switch (currentSection) {
-            case 'skills':
-                return 'Skills';
-            case 'experience':
-                return 'Selected Experience & Projects';
             case 'education':
                 return 'Education';
+            case 'researchandprojects':
+                return 'Publications & Projects';
+            case 'resume':
+                return 'Resume';
             case 'honors':
-                return 'Selected Honors';
-            case 'community':
-                return 'Community Involvement';
-            case 'hobbies':
-                return 'Hobbies';
+                return 'Honors';
             default:
                 return 'About Me';
         }
@@ -72,5 +65,21 @@ export default function HomePage() {
         >
             {renderCurrentSection()}
         </Layout>
+    );
+}
+
+export default function HomePage() {
+    return (
+        <Suspense fallback={
+            <Layout 
+                title="About Me" 
+                currentSection="about"
+                onSectionChange={() => {}}
+            >
+                <AboutSection />
+            </Layout>
+        }>
+            <HomePageContent />
+        </Suspense>
     );
 }

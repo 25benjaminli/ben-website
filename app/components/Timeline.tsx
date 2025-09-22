@@ -13,17 +13,17 @@ interface TimelineProps {
 function Timeline({ arr }: TimelineProps) {
 	return (
 		<div className="defaultContainer">
-			<div className="space-y-4 ">
+			<div className="element-spacing ">
 				{/* <div>
 					<h3 className="text-lg font-semibold text-gray-900 dark:text-white text-center md:text-left">{title}</h3>
 					<div className="h-px w-full bg-gray-200 dark:bg-gray-700 mt-2" />
 				</div> */}
 
-				<div className="space-y-5">
+				<div className="timeline-container">
 					{arr.map((exp, index) => (
 						<div key={index} className="relative">
-							<div className="relative pl-4 border-l-2 border-gray-200 dark:border-gray-700">
-								<div className="absolute -left-[5px] top-[10px] h-2.5 w-2.5 rounded-full bg-gray-300 dark:bg-gray-600" />
+							<div className="timeline-item">
+								<div className="timeline-dot" />
 
 								<div className="space-y-1">
 									<div className="flex flex-col md:flex-row md:items-center md:justify-between">
