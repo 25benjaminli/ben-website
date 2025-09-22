@@ -23,3 +23,13 @@ body {
 		@apply text-base text-gray-600 dark:text-gray-400 leading-relaxed space-y-1 list-disc list-inside
 	}
 }
+
+@layer utilities {
+	.scrollbar-hide {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+}
