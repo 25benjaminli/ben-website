@@ -7,7 +7,7 @@ const HonorsSection = () => {
 			highlights: (
 				<ul>
 					<li>The "oldest and most prestigious" science competition in the United States, with nearly 2,500 applicants who are evaluated based on "the originality and creativity of their scientific research, as well as their achievement and leadership"</li>
-					<li>Awarded $25,000 for research: <a href = "https://pubmed.ncbi.nlm.nih.gov/40276099/" target = "_blank">"MD-SA2: Multimodal, Depth-Aware Brain Tumor Segmentation in Sub-Saharan Populations"</a></li>
+					<li>Awarded $25,000 for research on building <a href = "https://doi.org/10.1117/1.JMI.12.2.024007" target = "_blank">an algorithm</a> to better detect brain tumors with low-quality MRI scans from sub-Saharan Africa</li>
 				</ul>
 			)
 		},
@@ -32,10 +32,31 @@ const HonorsSection = () => {
 				</ul>
 			)
 		},
+		{
+            title: 'New York Times STEM Writing Contest (Honorable Mention)',
+            organization: 'New York Times',
+            year: '2023',
+            highlights: (
+                <ul>
+                    <li>Top 1% out of over 3000 global entries for my article on black box algorithms and explainable AI (xAI)</li>
+                </ul>
+            )
+        },
+
+		{
+            title: 'Naval Horizons STEM Essay Contest (Highest Honors)',
+            organization: 'U.S. Navy',
+            year: '2022',
+            highlights: (
+                <ul>
+                    <li>Won the highest award for my critical essay on the ethics and future of artificial intelligence in the military</li>
+                </ul>
+            )
+        },
 
         {
             title: 'Presidential Volunteer Service Award (Gold)',
-            organization: 'Government of the United States',
+            organization: 'U.S. Government',
             year: '2022',
             highlights: (
                 <ul>

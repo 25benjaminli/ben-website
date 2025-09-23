@@ -26,10 +26,12 @@ const Layout = ({ children, title, currentSection, onSectionChange }: LayoutProp
 
             <main className="main-content-container">
                 <div className="content-wrapper">
-                    {/* Mobile Profile Section */}
-                    <div className="lg:hidden mb-8">
-                        <ProfileSection />
-                    </div>
+                    {/* Mobile Profile Section - Only show on About section */}
+                    {currentSection === 'about' && (
+                        <div className="lg:hidden mb-8">
+                            <ProfileSection />
+                        </div>
+                    )}
 
                     {/* Content */}
                     <div className="max-w-5xl 2xl:max-w-6xl">

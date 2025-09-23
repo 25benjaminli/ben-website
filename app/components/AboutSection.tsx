@@ -10,7 +10,7 @@ const AboutSection = () => {
 					
 				</p>
 				<p>
-					In my spare time, I enjoy blogging about tech (especially computer vision and ethics). If you're interested, feel free to check out my <a href = "https://medium.com/@25benjaminli" target="_blank">medium</a> page!
+					In my spare time, I enjoy blogging about tech (especially computer vision and ethics). If you're interested, feel free to check out my <a href = "https://medium.com/@25benjaminli" target="_blank" rel="noopener noreferrer">medium</a> page!
 					
 					I also like exploring the outdoors, running, rock climbing, and studying geography. Here are some of my favorite photos from places I've been!
 				</p>
@@ -34,6 +34,13 @@ const AboutSection = () => {
 						<Image src="/loon_mountain.png" alt="Loon Mountain" width={400} height={400} className="object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105" />
 						<figcaption className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-sm p-3 rounded-b-lg opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
 							<span>Photo directly after the race up Loon Mountain, NH. Behind my smile lies a world of hurt!</span>
+						</figcaption>
+					</figure>
+
+					<figure className="relative group cursor-pointer">
+						<Image src="/bouldering.png" alt="Bouldering" width={300} height={300} className="object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105" />
+						<figcaption className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-sm p-3 rounded-b-lg opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+							<span>Bouldering at local climbing gym!</span>
 						</figcaption>
 					</figure>
 				</div>
