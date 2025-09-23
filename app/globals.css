@@ -144,7 +144,7 @@ body {
 	}
 	
 	.nav-button-mobile {
-		@apply relative px-3 py-3 text-base font-medium transition-all duration-300 ease-in-out whitespace-nowrap;
+		@apply relative px-1.5 py-1.5 text-sm font-medium transition-all duration-300 ease-in-out whitespace-nowrap;
 	}
 	
 	.nav-button-active {
@@ -206,6 +206,18 @@ body {
 	
 	.icon-large {
 		@apply w-6 h-6;
+	}
+
+	/* Text Breaking Utilities */
+	.break-words-anywhere {
+		word-break: break-word;
+		overflow-wrap: anywhere;
+		hyphens: auto;
+	}
+	
+	.break-url {
+		word-break: break-all;
+		overflow-wrap: break-word;
 	}
 
 	/* Grid Components */

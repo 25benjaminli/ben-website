@@ -17,7 +17,7 @@ const Navigation = ({ currentSection, onSectionChange }: NavigationProps) => {
     return (
         <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-                <div className="flex justify-center py-4 sm:py-6">
+                <div className="flex justify-center py-2 sm:py-6">
                     {/* Desktop Navigation */}
                     <div className="hidden sm:flex space-x-8">
                         {navigationItems.map((item) => (
@@ -52,7 +52,7 @@ const Navigation = ({ currentSection, onSectionChange }: NavigationProps) => {
                     
                     {/* Mobile Navigation - Flex Wrap */}
                     <div className="sm:hidden w-full">
-                        <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 px-4">
+                        <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 px-1">
                             {navigationItems.map((item) => (
                                 <button
                                     key={item.key}

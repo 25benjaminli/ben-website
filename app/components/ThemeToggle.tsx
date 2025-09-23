@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes';
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -19,7 +19,6 @@ export function ThemeToggle() {
   }
 
   const handleToggle = () => {
-    console.log(theme);
     const newTheme = resolvedTheme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
   };

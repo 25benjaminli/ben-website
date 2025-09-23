@@ -51,7 +51,7 @@ function HomePageContent() {
             case 'resume':
                 return 'Resume';
             case 'honors':
-                return 'Honors';
+                return 'Selected Honors';
             default:
                 return 'About Me';
         }
