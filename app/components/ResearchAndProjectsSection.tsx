@@ -41,6 +41,20 @@ const ResearchAndProjects = () => {
 			)
 		},
 		{
+			title: 'Learning Machine Learning/Deep Learning',
+			link: 'https://github.com/25benjaminli/ml-explanations',
+			description: (
+				<>
+				<p>This work-in-progress repository contains an expository paper on some ML/DL approaches in addition to some illustrations/diagrams/code samples. </p>
+				<br/>
+				<div className="flex justify-center">
+					<Image src="/dpo.png" alt="QAOA Molecular Docking" width={400} height={200} />
+				</div>
+				<p className="text-sm text-center text-gray-500 dark:text-gray-400 mt-2">Preview of a diagram of direct preference optimization (DPO) from the paper.</p>
+				</>
+			)
+		},
+		{
 			title: '2025 New Jersey Academy of Sciences (NJAS) Symposium Judging App',
 			link: 'https://www.njas.org/',
 			description: (
@@ -68,6 +82,7 @@ const ResearchAndProjects = () => {
 				<p>This website! Built with Next.js, TypeScript, and Tailwind.</p>
 			)
 		},
+		
 	];
 
 	return (
@@ -108,13 +123,7 @@ const ResearchAndProjects = () => {
 				))}
 			</div>
 
-			{/* In-Progress Section */}
-			<h2 className="heading-secondary">
-				In-Progress
-			</h2>
-			<ul>
-				<li>Expository paper and from-scratch implementations of common deep learning architectures (MLP, CNN, Transformer, etc) with little more than NumPy</li>
-			</ul>
+	
 		</section>
 	);
 };
