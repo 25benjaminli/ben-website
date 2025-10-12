@@ -45,7 +45,7 @@ const ResearchAndProjects = () => {
 			link: 'https://github.com/25benjaminli/ml-explanations',
 			description: (
 				<>
-				<p>This work-in-progress repository contains an expository paper on some ML/DL approaches in addition to some illustrations/diagrams/code samples. </p>
+				<p>This work-in-progress repository contains an expository paper on some ML/DL approaches in addition to illustrations/diagrams/code samples. </p>
 				<br/>
 				<div className="flex justify-center">
 					<Image src="/dpo.png" alt="dpo" width={400} height={200} />

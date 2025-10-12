@@ -6,7 +6,7 @@ const HonorsSection = () => {
 			year: '2025',
 			highlights: (
 				<ul>
-					<li>The "oldest and most prestigious" science competition in the United States, with nearly 2,500 applicants who are evaluated based on "the originality and creativity of their scientific research, as well as their achievement and leadership"</li>
+					<li>The <a href = "https://www.societyforscience.org/regeneron-sts/" target = "_blank">"oldest and most prestigious"</a> science competition in the United States, with nearly 2,500 applicants evaluated on "the originality and creativity of their scientific research, as well as their achievement and leadership"</li>
 					<li>Awarded $25,000 for research on building <a href = "https://doi.org/10.1117/1.JMI.12.2.024007" target = "_blank">an algorithm</a> to better detect brain tumors with low-quality MRI scans from sub-Saharan Africa</li>
 				</ul>
 			)
@@ -17,7 +17,7 @@ const HonorsSection = () => {
 			year: '2024',
 			highlights: (
 				<ul>
-					<li>Selected to represent New Jersey for national symposium after winning 1st place in Math and Computer Science at the annual NJAS Symposium</li>
+					<li>Selected to represent New Jersey for national symposium after placing 1st in Math and Computer Science at the annual NJAS Symposium</li>
 				</ul>
 			)
 		},
@@ -85,7 +85,7 @@ const HonorsSection = () => {
 							</div>
 						))}
 
-						<p>Please see my resume for more comprehensive list of awards and activities.</p>
+						<p>Please see my resume for more info on awards/activities.</p>
 					</div>
 				</div>
 			</div>

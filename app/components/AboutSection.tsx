@@ -33,7 +33,7 @@ const AboutSection = () => {
 					<figure className="relative group cursor-pointer">
 						<Image src="/loon_mountain.png" alt="Loon Mountain" width={400} height={400} className="object-cover rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105" />
 						<figcaption className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-sm p-3 rounded-b-lg opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
-							<span>Photo directly after the race up Loon Mountain, NH. Behind my smile lies a world of hurt!</span>
+							<span>Photo directly after a trail race up Loon Mountain, NH. Behind my smile lies a world of hurt!</span>
 						</figcaption>
 					</figure>
 
