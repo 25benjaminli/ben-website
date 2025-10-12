@@ -47,7 +47,7 @@ function HomePageContent() {
             case 'education':
                 return 'Education';
             case 'researchandprojects':
-                return 'Publications & Projects';
+                return 'Research & Projects';
             case 'resume':
                 return 'Resume';
             case 'honors':

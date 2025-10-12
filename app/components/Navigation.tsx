@@ -9,7 +9,7 @@ const Navigation = ({ currentSection, onSectionChange }: NavigationProps) => {
     const navigationItems = [
         { key: 'about', label: 'About' },
         { key: 'education', label: 'Education' },
-        { key: 'researchandprojects', label: 'Publications & Projects' },
+        { key: 'researchandprojects', label: 'Research & Projects' },
         { key: 'honors', label: 'Honors' },
         { key: 'resume', label: 'Resume' },
     ];

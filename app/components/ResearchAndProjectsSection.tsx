@@ -41,14 +41,14 @@ const ResearchAndProjects = () => {
 			)
 		},
 		{
-			title: 'Learning Machine Learning/Deep Learning',
+			title: 'ML/DL Expository Paper + Resources',
 			link: 'https://github.com/25benjaminli/ml-explanations',
 			description: (
 				<>
 				<p>This work-in-progress repository contains an expository paper on some ML/DL approaches in addition to some illustrations/diagrams/code samples. </p>
 				<br/>
 				<div className="flex justify-center">
-					<Image src="/dpo.png" alt="QAOA Molecular Docking" width={400} height={200} />
+					<Image src="/dpo.png" alt="dpo" width={400} height={200} />
 				</div>
 				<p className="text-sm text-center text-gray-500 dark:text-gray-400 mt-2">Preview of a diagram of direct preference optimization (DPO) from the paper.</p>
 				</>
@@ -87,9 +87,9 @@ const ResearchAndProjects = () => {
 
 	return (
 		<section className="mb-12 px-4 sm:px-0">
-			{/* Publications Section */}
+			{/* Conferences/Journals */}
 			<h2 className="heading-secondary break-words-anywhere">
-				Publications/Presentations
+				Conferences/Journals
 			</h2>
 			<div className="space-y-4 mb-16 overflow-hidden">
 				<p className="break-words-anywhere"><strong>Li, B.</strong>, Ding, K, Dera, D. (2025). MD-SA2: optimizing Segment Anything 2 for multimodal, depth-aware brain tumor segmentation in sub-Saharan populations. J. Med. Imag. 12(2). <a href="https://doi.org/10.1117/1.JMI.12.2.024007" target="_blank" rel="noopener noreferrer" className="break-url">https://doi.org/10.1117/1.JMI.12.2.024007</a></p>
@@ -99,7 +99,7 @@ const ResearchAndProjects = () => {
 				<p className="break-words-anywhere"><strong>Li, B.</strong> (2023). A Novel Stacked Ensemble Machine Learning Model for Predicting Viral Zoonoses. (Poster accepted, not presented due to insufficient funds) Association for Computing Machinery (ACM) 2023 Annual Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM-BCB).</p>
 			</div>
 
-			{/* Projects Section */}
+			{/* Projects */}
 			<h2 className="heading-secondary">
 				Projects
 			</h2>
