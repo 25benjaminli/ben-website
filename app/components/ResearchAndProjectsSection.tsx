@@ -45,7 +45,7 @@ const ResearchAndProjects = () => {
 			link: 'https://github.com/25benjaminli/ml-explanations',
 			description: (
 				<>
-				<p>This work-in-progress repository contains an expository paper on some ML/DL approaches in addition to illustrations/diagrams/code samples. </p>
+				<p>This work-in-progress repository contains an expository paper on some ML/DL approaches in addition to illustrations and diagrams. See relevant <a href = "https://github.com/25benjaminli/ml-explanations-code" target="_blank" rel="noopener noreferrer">code samples here.</a> </p>
 				<br/>
 				<div className="flex justify-center">
 					<Image src="/dpo.png" alt="dpo" width={400} height={200} />
@@ -59,7 +59,7 @@ const ResearchAndProjects = () => {
 			link: 'https://www.njas.org/',
 			description: (
 				<>
-					<p>Streamlined the review process for 80 judges and over 200 student research projects by adding Google Forms/Sheets API integration, judge ID and student verification, scoring aggregation, and sanity checks for valid form input.</p>
+					<p>Streamlined the review process for ~80 judges and ~200 student research projects by adding Google Forms/Sheets API integration, judge ID and student verification, scoring aggregation, and sanity checks for valid form input.</p>
 					<br/>
 					<div className="flex justify-center">
 						<Image src="/njas.png" alt="NJAS logo" width={300} height={300} />

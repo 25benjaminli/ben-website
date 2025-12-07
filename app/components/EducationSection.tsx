@@ -5,7 +5,7 @@ const EducationSection = () => {
 		{
 			role: 'Cornell University',
 			org: '',
-			period: '2025 - 2029',
+			period: 'Expected 2025 - 2028',
 			highlights: (
 				<ul>
 					<li>Fall Semester courses: MATH 2210 (Linear Algebra), CS 2110 (Object-Oriented Programming and Data Structures), COGST 2801 (Intro to Game Theory), STS 2810 (Science, Nature, and Knowledge)</li>
