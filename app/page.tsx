@@ -6,8 +6,7 @@ import Layout from './components/Layout';
 import AboutSection from './components/AboutSection';
 import ResearchAndProjects from './components/ResearchAndProjectsSection';
 import EducationSection from './components/EducationSection';
-import ResumeSection from './components/ResumeSection';
-import HonorsSection from './components/HonorsSection';
+import AlbumSection from './components/AlbumSection';
 
 function HomePageContent() {
     const searchParams = useSearchParams();
@@ -33,10 +32,8 @@ function HomePageContent() {
                 return <EducationSection />;
             case 'researchandprojects':
                 return <ResearchAndProjects />;
-            case 'resume':
-                return <ResumeSection />;
-            case 'honors':
-                return <HonorsSection />;
+            case 'album':
+                return <AlbumSection />;
             default:
                 return <AboutSection />;
         }
@@ -50,8 +47,10 @@ function HomePageContent() {
                 return 'Research & Projects';
             case 'resume':
                 return 'Resume';
-            case 'honors':
-                return 'Selected Honors';
+            case 'about':
+                return 'About Me';
+            case 'album':
+                return 'Photo Album';
             default:
                 return 'About Me';
         }

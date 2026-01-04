@@ -16,7 +16,7 @@ body {
 	}
 
 	.defaultContainer {
-		@apply pt-2 pb-4 bg-white dark:bg-gray-900 px-6;
+		@apply pt-2 pb-4 bg-transparent px-6;
 	}
 
 	ul {
@@ -27,11 +27,11 @@ body {
 @layer components {
 	/* Layout Components */
 	.page-container {
-		@apply min-h-screen bg-white dark:bg-gray-900;
+		@apply min-h-screen bg-gradient-to-br from-blue-100 via-indigo-50 to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-950;
 	}
 	
 	.content-card {
-		@apply bg-white dark:bg-gray-900 rounded-lg border border-gray-200 dark:border-gray-800;
+		@apply bg-white/60 dark:bg-gray-900/60 backdrop-blur-md rounded-2xl border dark:border-gray-800;
 	}
 	
 	.sidebar-container {
@@ -84,33 +84,8 @@ body {
 		@apply flex items-center justify-center;
 	}
 	
-	.flex-between {
-		@apply flex items-center justify-between;
-	}
-	
 	.flex-end {
 		@apply flex justify-end;
-	}
-
-	/* Spacing Utilities */
-	.section-spacing {
-		@apply space-y-6;
-	}
-	
-	.section-spacing-tight {
-		@apply space-y-3;
-	}
-	
-	.section-spacing-loose {
-		@apply space-y-8;
-	}
-	
-	.element-spacing {
-		@apply space-y-4;
-	}
-	
-	.element-spacing-tight {
-		@apply space-y-2;
 	}
 
 	/* UI Components */
@@ -136,7 +111,7 @@ body {
 	}
 	
 	.theme-toggle-btn {
-		@apply p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors;
+		@apply p-2 rounded-lg bg-transparent text-gray-800 dark:text-gray-200 hover:bg-gray-200/50 dark:hover:bg-gray-700/50 transition-colors;
 	}
 	
 	.nav-button {
@@ -174,24 +149,6 @@ body {
 	/* Group hover effect for nav underline */
 	.group:hover .nav-underline-hover {
 		@apply w-full;
-	}
-
-	/* Tooltip Components */
-	.tooltip {
-		@apply absolute bottom-full left-1/2 transform -translate-x-1/2 mb-1 px-2 py-1 text-xs text-white bg-gray-900 dark:bg-gray-700 rounded opacity-0 transition-opacity duration-200 whitespace-nowrap pointer-events-none;
-	}
-	
-	/* Group hover effect for tooltip */
-	.group:hover .tooltip {
-		@apply opacity-100;
-	}
-	
-	.tooltip-top {
-		@apply absolute top-full left-1/2 transform -translate-x-1/2 mt-2 px-2 py-1 text-sm text-white bg-gray-900 dark:bg-gray-700 rounded opacity-0 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10;
-	}
-	
-	/* Group hover effect for tooltip-top */
-	.group:hover .tooltip-top {
 		@apply opacity-100;
 	}
 
@@ -220,39 +177,9 @@ body {
 		overflow-wrap: break-word;
 	}
 
-	/* Grid Components */
-	.grid-responsive {
-		@apply grid grid-cols-1 md:grid-cols-2 gap-6;
-	}
-	
-	.grid-photos {
-		@apply flex flex-wrap items-center justify-center gap-4 pt-4;
-	}
-
-	/* Photo Components */
-	.photo-card {
-		@apply text-center;
-	}
-	
-	.photo-image {
-		@apply object-cover rounded-lg shadow-md;
-	}
-	
-	.photo-caption {
-		@apply text-sm text-gray-500 dark:text-gray-400 mt-2;
-	}
-
-	/* Timeline Components */
-	.timeline-container {
-		@apply space-y-5;
-	}
-	
-	.timeline-item {
-		@apply relative pl-4 border-l-2 border-gray-200 dark:border-gray-700;
-	}
-	
-	.timeline-dot {
-		@apply absolute -left-[5px] top-[10px] h-2.5 w-2.5 rounded-full bg-gray-300 dark:bg-gray-600;
+	/* Caption Components */
+	.caption-text {
+		@apply text-sm text-center text-gray-500 dark:text-gray-400 mt-2;
 	}
 }
 

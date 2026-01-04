@@ -3,20 +3,19 @@ import { ThemeToggle } from './ThemeToggle';
 
 const ProfileSection = () => {
 	return (
-		<div className="w-full pb-4 pt-1 md:py-0 bg-white dark:bg-gray-900 px-6 sm:pt-0">
-				{/* Theme Toggle Button */}
+		<div className="w-full py-6 bg-white/60 dark:bg-gray-900/60 backdrop-blur-md px-6 rounded-2xl">
 				<div className="flex-end mb-2">
 					<ThemeToggle />
 				</div>
 				
-				<div className="section-spacing-tight text-center">
+				<div className="space-y-3 text-center">
 				<div className="profile-image-container">
 					<div className="profile-image">
 						<Image src="/portrait.jpg" alt="Profile" fill className="object-cover" priority />
 					</div>
 				</div>
 
-				<div className="element-spacing-tight">
+				<div className = "space-y-2">
 					<h1 className="heading-profile-name">Benjamin Li</h1>
 					<h2 className="heading-profile-title">Computer Science Student at Cornell University</h2>
 					<div className="divider-short" />
@@ -32,7 +31,7 @@ const ProfileSection = () => {
 					</p>
 				</div>
 
-				<div className="flex-center section-spacing-tight mt-3">
+				<div className="flex-center space-y-3 mt-3">
 
 					{/* Social Links */}
 					<div>

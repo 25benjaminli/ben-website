@@ -14,7 +14,7 @@ export function ThemeToggle() {
   if (!mounted) {
     return (
       // Return a placeholder with the same dimensions to prevent layout shift
-      <div className="p-2 w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800" />
+      <div className="p-2 w-9 h-9 rounded-lg bg-transparent" />
     );
   }
 
@@ -44,9 +44,8 @@ export function ThemeToggle() {
         )}
       </button>
       
-      <div className="tooltip-top">
+      <div className="absolute right-0 top-full mt-2 px-2 py-1 text-xs font-medium text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none z-50 dark:bg-gray-200 dark:text-gray-900">
         Toggle to {nextMode} mode
-        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 border-l-4 border-r-4 border-b-4 border-transparent border-b-gray-900 dark:border-b-gray-700"></div>
       </div>
     </div>
   );

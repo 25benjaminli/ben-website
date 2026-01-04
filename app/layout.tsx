@@ -15,9 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	title: 'Benjamin Li',
-	description: "I'm a student at Cornell University, originally from Millburn, New Jersey, interested in \
-	leveraging artificial intelligence and computer vision to solve socially important problems \
-	(e.g. in healthcare and the environment)", 
+	description: "My name is Benjamin and I'm a first-year student at Cornell University, originally from Millburn, New Jersey. I'm currently interested in AI and vision with a focus on resource efficiency, dealing with noisy data, and interpretability.", 
 	keywords: [
 		'Computer Science',
 		'Software Developer',
