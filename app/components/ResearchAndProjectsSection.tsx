@@ -120,7 +120,7 @@ const ResearchAndProjects = () => {
 					</div>
 				))}
 			</div>
-
+			<p className="text-base"><b>See more on my <a href="https://github.com/25benjaminli" target="_blank" rel="noopener noreferrer">GitHub</a> page!</b></p>
 	
 		</section>
 	);

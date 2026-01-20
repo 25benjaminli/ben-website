@@ -5,7 +5,6 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import Layout from './components/Layout';
 import AboutSection from './components/AboutSection';
 import ResearchAndProjects from './components/ResearchAndProjectsSection';
-import EducationSection from './components/EducationSection';
 import AlbumSection from './components/AlbumSection';
 
 function HomePageContent() {
@@ -28,8 +27,6 @@ function HomePageContent() {
 
     const renderCurrentSection = () => {
         switch (currentSection) {
-            case 'education':
-                return <EducationSection />;
             case 'researchandprojects':
                 return <ResearchAndProjects />;
             case 'album':
@@ -41,8 +38,6 @@ function HomePageContent() {
 
     const getSectionTitle = () => {
         switch (currentSection) {
-            case 'education':
-                return 'Education';
             case 'researchandprojects':
                 return 'Research & Projects';
             case 'resume':

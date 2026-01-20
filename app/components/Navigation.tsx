@@ -8,7 +8,6 @@ interface NavigationProps {
 const Navigation = ({ currentSection, onSectionChange }: NavigationProps) => {
     const navigationItems = [
         { key: 'about', label: 'About' },
-        { key: 'education', label: 'Education' },
         { key: 'researchandprojects', label: 'Research & Projects' },
         { key: 'resume', label: 'Resume' },
         { key: 'album', label: 'Photo Album' },
