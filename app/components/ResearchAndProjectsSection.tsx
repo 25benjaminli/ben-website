@@ -3,6 +3,20 @@ const ResearchAndProjects = () => {
 
 	const projects = [
 		{
+			title: 'Evidential Learning for Image Reconstruction',
+			link: 'https://github.com/25benjaminli/edl-reconstruction',
+			description: (
+				<>
+				<p>Implemented <a href="https://arxiv.org/abs/1910.02600" target="_blank" rel="noopener noreferrer">evidential deep learning (EDL)</a> in a new domain (image reconstruction) for single-shot aleatoric (inherent) and epistemic (reducible with more data) uncertainty quantification. Learned the parameters to the Normal Inverse Gamma, a meta-distribution for the Gaussian. Specifically, the task was to convert grayscale to RGB.</p>
+				<br />
+				<div className="flex justify-center">
+					<Image src="/edl.png" alt="EDL Reconstruction" width={600} height={400} />
+				</div>
+				<p className="caption-text">Example output of the model. Different regions of the hair elicit varying levels of epistemic / aleatoric uncertainty. </p>
+				</>
+			)
+		},
+		{
 			title: 'SAM2LoRA: Parameter-Efficient Fine-tuning for SAM2',
 			link: 'https://github.com/25benjaminli/sam2lora',
 			description: (
@@ -56,7 +70,7 @@ const ResearchAndProjects = () => {
 		},
 		{
 			title: '2025 New Jersey Academy of Sciences (NJAS) Symposium Judging App',
-			link: 'https://www.njas.org/',
+			link: 'https://github.com/25benjaminli/science_fair_judging',
 			description: (
 				<>
 					<p>Streamlined the review process for ~80 judges and ~200 student research projects by adding Google Forms/Sheets API integration, judge ID and student verification, scoring aggregation, and sanity checks for valid form input.</p>
