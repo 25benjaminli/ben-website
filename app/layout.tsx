@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 		siteName: 'Benjamin Li',
 		images: [
 			{
-				url: '/portrait.jpg',
+				url: '/portrait.png',
 				width: 1200,
 				height: 630,
 				alt: 'Benjamin Li',

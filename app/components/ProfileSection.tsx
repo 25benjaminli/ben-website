@@ -11,7 +11,7 @@ const ProfileSection = () => {
 				<div className="space-y-3 text-center">
 				<div className="profile-image-container">
 					<div className="profile-image">
-						<Image src="/portrait.jpg" alt="Profile" fill className="object-cover" priority />
+						<Image src="/portrait.png" alt="Profile" fill className="object-cover" priority />
 					</div>
 				</div>
 
