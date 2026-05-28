@@ -11,32 +11,32 @@ const images = [
 		caption: "Hiking near Mount Rainier."
 	},
 	{
-		src: "/photo_album/rainier_night.png",
+		src: "/photo_album/rainier_night.jpg",
 		alt: "Rainier (night)",
 		caption: "Another Rainier pic, this time at night!"
 	},
 	{
-		src: "/photo_album/cascades.png",
+		src: "/photo_album/cascades.jpg",
 		alt: "North Cascades",
 		caption: "North Cascades National Park, some more breathtaking views."
 	},
 	{
-		src: "/photo_album/death_valley.png",
+		src: "/photo_album/death_valley.jpg",
 		alt: "Death Valley",
 		caption: "Cooked alive at Death Valley!"
 	},
 	{
-		src: "/photo_album/orange_reservoir.png",
+		src: "/photo_album/orange_reservoir.jpg",
 		alt: "Orange Reservoir",
 		caption: "Orange reservoir, love to go here when I'm in NJ."
 	},
 	{
-		src: "/photo_album/cornell_sunset.png",
+		src: "/photo_album/cornell_sunset.jpg",
 		alt: "Cornell Sunset",
 		caption: "Cornell sunset, amazing :O"
 	},
     {
-		src: "/photo_album/cave.png",
+		src: "/photo_album/cave.jpg",
 		alt: "Huanglong Cave, Hunan",
 		caption: "Huanglong cave. Beautiful karst cave formations!"
 	},
@@ -59,6 +59,11 @@ const images = [
 		src: "/photo_album/foggy.jpg",
 		alt: "Foggy day at Cornell",
 		caption: "A really foggy day at Cornell..."
+	},
+	{
+		src: "/photo_album/summer_palace.jpg",
+		alt: "Summer Palace, Beijing",
+		caption: "The bridge at the Summer Palace in Beijing, China."
 	},
 ];
 
@@ -94,7 +99,7 @@ const AlbumSection = () => {
 
 	return (
 		<div className="defaultContainer">
-			<p className="text-sm text-gray-500 dark:text-gray-500 mb-5">Click any photo to view.</p>
+			<p className="text-sm text-gray-500 dark:text-gray-500 mb-5">Click any photo to view. In no particular order :)</p>
 
 			{/* Masonry grid via CSS columns */}
 			<div style={{ columns: '2', columnGap: '12px' }} className="sm:columns-2 lg:columns-3">
