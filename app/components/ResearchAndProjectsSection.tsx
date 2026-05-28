@@ -23,7 +23,7 @@ const projects: Project[] = [
 		tags: ['ML/DL', 'CV/Graphics'],
 		description: (
 			<>
-				<p>Work done for Computational Imaging Lab at Cornell. Implemented <a href="https://arxiv.org/abs/1910.02600" target="_blank" rel="noopener noreferrer">evidential deep learning (EDL)</a> in a new domain (image reconstruction) for single-shot aleatoric (inherent) and epistemic (reducible with more data) uncertainty quantification. Learned the parameters to the Normal Inverse Gamma, a meta-distribution for the Gaussian. Specifically, the task was to convert grayscale to RGB. Created <a href = "https://docs.google.com/presentation/d/1yjTbxTcDUt_r4XmddTrQcxiH6axVJcGThnD2bXtMePE" target="_blank" rel="noopener noreferrer">slideshow presentation</a> and wrote <a href = "https://towardsdatascience.com/introduction-to-deep-evidential-regression-for-uncertainty-quantification/" target="_blank" rel="noopener noreferrer">article</a> for Towards Data Science, a publication with millions of monthly readers, on the subject.</p>
+				<p>Work done as part of Computational Imaging Lab at Cornell. Implemented <a href="https://arxiv.org/abs/1910.02600" target="_blank" rel="noopener noreferrer">evidential deep learning (EDL)</a> in a new domain (image reconstruction) for single-shot aleatoric (inherent) and epistemic (reducible with more data) uncertainty quantification. Learned the parameters to the Normal Inverse Gamma, a meta-distribution for the Gaussian, to convert grayscale to RGB. Created <a href = "https://docs.google.com/presentation/d/1yjTbxTcDUt_r4XmddTrQcxiH6axVJcGThnD2bXtMePE" target="_blank" rel="noopener noreferrer">slideshow presentation</a> and wrote <a href = "https://towardsdatascience.com/introduction-to-deep-evidential-regression-for-uncertainty-quantification/" target="_blank" rel="noopener noreferrer">article</a> for Towards Data Science, a publication with millions of monthly readers, on the subject (fortunate to receive <b>editor's pick!</b>).</p>
 				<br />
 				<div className="flex justify-center">
 					<Image src="/edl.png" alt="EDL Reconstruction" width={600} height={400} className="rounded-lg max-w-full" />
@@ -71,18 +71,18 @@ const projects: Project[] = [
 		),
 	},
 	{
-		title: 'ML/DL Expository Paper + Resources',
-		link: 'https://github.com/25benjaminli/ml-explanations',
-		summary: 'Work-in-progress expository paper with illustrations covering ML/DL approaches.',
-		tags: ['ML/DL'],
+		title: 'OCaml Raytracer',
+		link: 'https://github.com/arinb123/OCamera',
+		summary: 'Multithreaded raytracer in OCaml with a GUI, supporting meshes, textures, and custom camera controls.',
+		tags: ['CV/Graphics'],
 		description: (
 			<>
-				<p>This work-in-progress repository contains an expository paper on some ML/DL approaches in addition to illustrations and diagrams. See relevant <a href="https://github.com/25benjaminli/ml-explanations-code" target="_blank" rel="noopener noreferrer">code samples here.</a></p>
+				<p>Collaborated to build a raytracer in OCaml supporting spheres, triangles, and user-defined polygon meshes, lambertian and metal surface textures, and a customizable camera. Wrote a linear algebra and geometry library from scratch. Features multithreading for performance and a graphical user interface where users can interactively move the camera and upload custom meshes.</p>
 				<br />
 				<div className="flex justify-center">
-					<Image src="/dpo.png" alt="dpo" width={400} height={200} className="rounded-lg max-w-full" />
+					<Image src="/camltrace.png" alt="OCaml Raytracer GUI" width={600} height={400} className="rounded-lg max-w-full" />
 				</div>
-				<p className="caption-text">Preview of a diagram of direct preference optimization (DPO) from the paper.</p>
+				<p className="caption-text">Image of a scene with three spheres with lambertian and metal material contained within our GUI.</p>
 			</>
 		),
 	},
@@ -134,19 +134,19 @@ const projects: Project[] = [
 			</>
 		),
 	},
-		{
-		title: 'OCaml Raytracer',
-		link: 'https://github.com/arinb123/OCamera',
-		summary: 'Multithreaded raytracer in OCaml with a GUI, supporting meshes, textures, and custom camera controls.',
-		tags: ['CV/Graphics'],
+	{
+		title: 'ML/DL Expository Paper + Resources',
+		link: 'https://github.com/25benjaminli/ml-explanations',
+		summary: 'Work-in-progress expository paper with illustrations covering ML/DL approaches.',
+		tags: ['ML/DL'],
 		description: (
 			<>
-				<p>Collaborated to build a raytracer in OCaml supporting spheres, triangles, and user-defined polygon meshes, lambertian and metal surface textures, and a customizable camera. Wrote a linear algebra and geometry library from scratch. Features multithreading for performance and a graphical user interface where users can interactively move the camera and upload custom meshes.</p>
+				<p>This work-in-progress repository contains an expository paper on some ML/DL approaches in addition to illustrations and diagrams. See relevant <a href="https://github.com/25benjaminli/ml-explanations-code" target="_blank" rel="noopener noreferrer">code samples here.</a></p>
 				<br />
 				<div className="flex justify-center">
-					<Image src="/camltrace.png" alt="OCaml Raytracer GUI" width={600} height={400} className="rounded-lg max-w-full" />
+					<Image src="/dpo.png" alt="dpo" width={400} height={200} className="rounded-lg max-w-full" />
 				</div>
-				<p className="caption-text">Image of a scene with three spheres with lambertian and metal material contained within our GUI.</p>
+				<p className="caption-text">Preview of a diagram of direct preference optimization (DPO) from the paper.</p>
 			</>
 		),
 	},
