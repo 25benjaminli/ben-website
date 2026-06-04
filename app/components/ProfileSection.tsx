@@ -3,7 +3,7 @@ import { ThemeToggle } from './ThemeToggle';
 
 const ProfileSection = () => {
 	return (
-		<div className="w-full py-6 bg-white/60 dark:bg-gray-900/60 backdrop-blur-md px-6 rounded-2xl">
+		<div className="w-full py-6 bg-white dark:bg-gray-900 px-6 rounded-xl border border-gray-100 dark:border-gray-700">
 				<div className="flex-end mb-2">
 					<ThemeToggle />
 				</div>
@@ -35,9 +35,9 @@ const ProfileSection = () => {
 
 					{/* Social Links */}
 					<div>
-						<strong><p>
+						<p className="font-semibold text-sm text-gray-700 dark:text-gray-300">
 							Find me on:
-						</p></strong>
+						</p>
 						<div className="flex flex-wrap justify-center gap-4 mt-2">
 							<a
 								href="https://github.com/25benjaminli"
