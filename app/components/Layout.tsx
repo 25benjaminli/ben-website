@@ -1,54 +1,21 @@
-'use client';
-
 import { ReactNode } from 'react';
-import ProfileSection from './ProfileSection';
 import Navigation from './Navigation';
 
 interface LayoutProps {
-    children: ReactNode;
-    title: string;
-    currentSection: string;
-    onSectionChange: (section: string) => void;
+	children: ReactNode;
+	title?: string;
 }
 
-const Layout = ({ children, title, currentSection, onSectionChange }: LayoutProps) => {
-    return (
-        <div className="page-container">
-            <Navigation currentSection={currentSection} onSectionChange={onSectionChange} />
-            
-            <div className="sidebar-container">
-                <div className="max-w-7xl mx-auto px-6">
-                    <div className="w-full max-w-sm mx-auto pt-4">
-                        <ProfileSection />
-                    </div>
-                </div>
-            </div>
-
-            <main className="main-content-container">
-                <div className="content-wrapper">
-                    {currentSection === 'about' && (
-                        <div className="lg:hidden mb-8">
-                            <ProfileSection />
-                        </div>
-                    )}
-
-                    <div className="max-w-5xl 2xl:max-w-6xl">
-                        <div className="content-card">
-                            <div className="pt-8 pb-4 px-8">
-                                <h1 className="heading-primary">
-                                    {title}
-                                </h1>
-                                <div className="divider-horizontal" />
-                            </div>
-                            <div className="px-8 pb-12 text-body">
-                                {children}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    );
+const Layout = ({ children, title }: LayoutProps) => {
+	return (
+		<div className="page-shell">
+			<Navigation />
+			<main className="page-content">
+				{title && <h1 className="heading-page">{title}</h1>}
+				{children}
+			</main>
+		</div>
+	);
 };
 
 export default Layout;
