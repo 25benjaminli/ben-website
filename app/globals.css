@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+	html {
+		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+	}
+
 	body {
 		@apply bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-300;
 	}
@@ -49,11 +54,11 @@
 
 	/* Nav */
 	.nav-link {
-		@apply text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors;
+		@apply text-sm text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors border-b border-transparent pb-0.5;
 	}
 
 	.nav-link-active {
-		@apply text-gray-900 dark:text-white;
+		@apply text-sm text-gray-900 dark:text-white border-b border-gray-900 dark:border-white pb-0.5;
 	}
 
 	/* Interactive */

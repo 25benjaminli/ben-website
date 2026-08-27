@@ -16,12 +16,12 @@ const Navigation = () => {
 
 	return (
 		<nav className="sticky top-0 z-40 bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
-			<div className="max-w-2xl mx-auto px-6 py-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
-				<Link href="/" className="text-sm font-medium text-gray-900 dark:text-white no-underline">
+			<div className="max-w-2xl mx-auto px-4 sm:px-6 py-3 flex flex-nowrap items-center justify-between gap-x-2 sm:gap-x-4">
+				<Link href="/" className="text-sm font-medium text-gray-900 dark:text-white no-underline whitespace-nowrap">
 					Benjamin Li
 				</Link>
 
-				<div className="flex items-center gap-4 sm:gap-5">
+				<div className="flex items-center gap-3 sm:gap-5 flex-nowrap">
 					{navigationItems.map((item) =>
 						item.external ? (
 							<a
@@ -29,7 +29,7 @@ const Navigation = () => {
 								href={item.href}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="nav-link no-underline"
+								className="nav-link no-underline whitespace-nowrap"
 							>
 								{item.label}
 							</a>
@@ -37,7 +37,7 @@ const Navigation = () => {
 							<Link
 								key={item.href}
 								href={item.href}
-								className={`no-underline ${pathname === item.href ? 'nav-link-active' : 'nav-link'}`}
+								className={`no-underline whitespace-nowrap ${pathname === item.href ? 'nav-link-active' : 'nav-link'}`}
 							>
 								{item.label}
 							</Link>
