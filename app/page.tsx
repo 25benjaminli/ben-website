@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout from './components/Layout';
 import SocialLinks from './components/SocialLinks';
+import FavoriteMusic from './components/FavoriteMusic';
 
 export default function HomePage() {
 	return (
@@ -29,10 +30,12 @@ export default function HomePage() {
 					in the Regeneron Science Talent Search for my work on brain tumor segmentation using low-quality MRI scans from sub-Saharan Africa. In addition to my research, I have experience with web and app development, robotics, and quantum computing.
 				</p>
 				<p>
-					In my spare time, I enjoy reading and writing about tech. I also like running, hiking, rock climbing, and am a bit of a geography nerd (fun fact: I'm formerly top 100 in the US for competitive GeoGuessr).{' '}
-					<Link href="/photos">Here</Link> are photos from some of my favorite places so far. Thanks for stopping by!
+					In my spare time, I enjoy hiking, rock climbing, and am a bit of a geography nerd (fun fact: once top 100 in the US for competitive GeoGuessr); <Link href="/photos">here</Link> are photos from some of my favorite places so far.
+					Also a big music enjoyer, check below for some of my favorite tracks. Thanks for stopping by!
 				</p>
 			</div>
+
+			<FavoriteMusic />
 
 			<div className="mt-10 pt-6 border-t border-gray-100 dark:border-gray-800">
 				<SocialLinks />
