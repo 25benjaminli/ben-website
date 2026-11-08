@@ -30,8 +30,8 @@ export default function HomePage() {
 					in the Regeneron Science Talent Search for my work on brain tumor segmentation using low-quality MRI scans from sub-Saharan Africa. In addition to my research, I have experience with web and app development, robotics, and quantum computing.
 				</p>
 				<p>
-					In my spare time, I enjoy hiking, rock climbing, and am a bit of a geography nerd (fun fact: once top 100 in the US for competitive GeoGuessr); <Link href="/photos">here</Link> are photos from some of my favorite places so far.
-					Also a big music enjoyer, check below for some of my favorite tracks. Thanks for stopping by!
+					Outside of work, I enjoy soccer, rock climbing, and geography (fun fact: once top 100 in the US for ranked <a href = "https://www.geoguessr.com/" target="_blank" rel="noopener noreferrer">GeoGuessr</a>). For fun, <Link href="/photos">here</Link> are nice photos from places I've visited, and shown below
+					are songs I've been vibing to recently!
 				</p>
 			</div>
 

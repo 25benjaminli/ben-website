@@ -19,6 +19,7 @@ const buttonClass =
 	'px-2 py-1 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors';
 
 export default function FavoriteMusic() {
+	const [open, setOpen] = useState(false);
 	const [index, setIndex] = useState(0);
 	const count = trackIds.length;
 	const prev = () => setIndex((i) => (i - 1 + count) % count);
@@ -27,30 +28,46 @@ export default function FavoriteMusic() {
 	return (
 		<section className="mt-10">
 			<div className="flex items-center justify-between mb-3">
-				<h2 className="text-base font-medium text-gray-900 dark:text-white">Favorite music</h2>
-				<div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
-					<button type="button" onClick={prev} aria-label="Previous track" className={buttonClass}>
-						←
+				<h2 className="text-base font-medium">
+					<button
+						type="button"
+						onClick={() => setOpen((o) => !o)}
+						aria-expanded={open}
+						className="flex items-center gap-2 text-gray-900 dark:text-white"
+					>
+						Cool songs
+						<span aria-hidden className="text-sm text-gray-500 dark:text-gray-400">
+							{open ? '−' : '+'}
+						</span>
 					</button>
-					<span className="tabular-nums px-1">
-						{index + 1} / {count}
-					</span>
-					<button type="button" onClick={next} aria-label="Next track" className={buttonClass}>
-						→
-					</button>
+				</h2>
+				{open && (
+					<div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
+						<button type="button" onClick={prev} aria-label="Previous track" className={buttonClass}>
+							←
+						</button>
+						<span className="tabular-nums px-1">
+							{index + 1} / {count}
+						</span>
+						<button type="button" onClick={next} aria-label="Next track" className={buttonClass}>
+							→
+						</button>
+					</div>
+				)}
+			</div>
+			{open && (
+				<div style={{ height: 152 * SCALE }} className="overflow-hidden rounded-xl">
+					<iframe
+						key={trackIds[index]}
+						src={`https://open.spotify.com/embed/track/${trackIds[index]}`}
+						title={`Favorite track ${index + 1} of ${count}`}
+						height="152"
+						className="border-0 origin-top-left"
+						style={{ width: `${100 / SCALE}%`, transform: `scale(${SCALE})` }}
+						allow="encrypted-media"
+					/>
 				</div>
-			</div>
-			<div style={{ height: 152 * SCALE }} className="overflow-hidden rounded-xl">
-				<iframe
-					key={trackIds[index]}
-					src={`https://open.spotify.com/embed/track/${trackIds[index]}`}
-					title={`Favorite track ${index + 1} of ${count}`}
-					height="152"
-					className="border-0 origin-top-left"
-					style={{ width: `${100 / SCALE}%`, transform: `scale(${SCALE})` }}
-					allow="encrypted-media"
-				/>
-			</div>
+			)}
 		</section>
 	);
 }
